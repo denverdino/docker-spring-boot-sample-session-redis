@@ -1,0 +1,8 @@
+web:
+  image: registry.cn-hangzhou.aliyuncs.com/denverdino/spring-boot-session-redis
+  ports:
+    - 8080:8080
+  links:
+    - redis:redis
+redis:
+  image: redis:3
